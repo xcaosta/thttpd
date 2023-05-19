@@ -9,6 +9,12 @@ if [[ -d ${root} ]]; then
     ./configure --prefix=$root
     git checkout Makefile.in
     make
+    killall thttpd
     make install
+
+    root=$(realpath $HOME)/Public
+    chmod -R a+rx $root/www/data
+    $root/sbin/thttpd -u $USER -C $root/thttpd.conf
+    ps -eo pid,args | grep '[t]httpd'
   )
 fi

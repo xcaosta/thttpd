@@ -1,6 +1,6 @@
 /* libhttpd.c - HTTP protocol library
 **
-** Copyright © 1995,1998,1999,2000,2001,2015 by
+** Copyright Â© 1995,1998,1999,2000,2001,2015 by
 ** Jef Poskanzer <jef@mail.acme.com>. All rights reserved.
 **
 ** Redistribution and use in source and binary forms, with or without
@@ -754,7 +754,7 @@ send_response( httpd_conn* hc, int status, char* title, char* extraheads, char* 
     <title>%d %s</title>\n\
   </head>\n\
 \n\
-  <body bgcolor=\"#cc9999\" text=\"#000000\" link=\"#2020ff\" vlink=\"#4040cc\">\n\
+  <body bgcolor=\"#303030\" text=\"#eeeeee\" link=\"#e0e0e0\" vlink=\"#f0f0f0\">\n\
 \n\
     <h2>%d %s</h2>\n",
 	status, title, status, title );
@@ -2807,7 +2807,7 @@ ls( httpd_conn* hc )
     <title>Index of %.80s</title>\n\
   </head>\n\
 \n\
-  <body bgcolor=\"#99cc99\" text=\"#000000\" link=\"#2020ff\" vlink=\"#4040cc\">\n\
+  <body bgcolor=\"#303030\" text=\"#eeeeee\" link=\"#e0e0e0\" vlink=\"#f0f0f0\">\n\
 \n\
     <h2>Index of %.80s</h2>\n\
 \n\
